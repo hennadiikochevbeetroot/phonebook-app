@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "phonebook-app"
+version = "0.0.1"
+description = "Phonebook application"
+authors = ["hennadiikochevbeetroot <hennadiikochevbeetroot@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytz = "^2024.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
