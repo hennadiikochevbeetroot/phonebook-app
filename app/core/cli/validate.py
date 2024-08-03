@@ -1,4 +1,4 @@
-from ..constants import POSSIBLE_OPTIONS
+from ..constants.cli import POSSIBLE_OPTIONS
 
 
 def validate_option(user_input: str) -> tuple[bool, int | None]:

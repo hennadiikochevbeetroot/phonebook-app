@@ -1,4 +1,4 @@
-from ..constants import HELP_MESSAGE, POSSIBLE_OPTIONS
+from ..constants.cli import HELP_MESSAGE, POSSIBLE_OPTIONS
 
 
 def print_help_message():
