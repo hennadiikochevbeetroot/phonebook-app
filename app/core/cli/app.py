@@ -1,6 +1,16 @@
+from typing import Callable
+
+from .exit import exit_program
 from .message import print_help_message, print_invalid_message
 from .validate import validate_option
-from ..types import Phonebook
+from ..constants.types import Phonebook
+from ..phonebook.create_entry import create_entry
+from ..phonebook.print_phonebook import print_phonebook
+
+OPTION_TO_FUNCTION: dict[int, Callable[[Phonebook], None]] = {
+    1: create_entry,
+    9: print_phonebook,
+}
 
 
 def cli_app() -> None:
@@ -14,4 +24,6 @@ def cli_app() -> None:
             continue
 
         if option == 0:
-            quit(option)
+            exit_program()
+
+        OPTION_TO_FUNCTION[option](phonebook)
