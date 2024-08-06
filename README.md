@@ -5,6 +5,7 @@
 - 1 - Add new entries
 - 2 - Search by first name
 - 3 - Search by last name
+- 4 - Search by full name
 - 9 - Print contents of dictionary
 
 ### Features to develop:
