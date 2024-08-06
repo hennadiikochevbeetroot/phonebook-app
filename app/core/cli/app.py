@@ -3,21 +3,23 @@ from typing import Callable
 from .exit import exit_program
 from .message import print_help_message, print_invalid_message
 from .validate import validate_option
+from ..constants.cli import PHONEBOOK_TEST_DATA
 from ..constants.types import Phonebook
 from ..phonebook.create_entry import create_entry
 from ..phonebook.print_phonebook import print_phonebook
 from ..phonebook.search_phonebook_by_first_name import search_phonebook_by_first_name
+from ..phonebook.search_phonebook_by_last_name import search_phonebook_by_last_name
 
 OPTION_TO_FUNCTION: dict[int, Callable[[Phonebook], None]] = {
     1: create_entry,
     2: search_phonebook_by_first_name,
+    3: search_phonebook_by_last_name,
     9: print_phonebook,
 }
 
-
 def cli_app() -> None:
     print_help_message()
-    phonebook: Phonebook = {}
+    phonebook: Phonebook = {**PHONEBOOK_TEST_DATA}
     while True:
         user_input = input('Choose an option: ')
         is_valid, option = validate_option(user_input)
