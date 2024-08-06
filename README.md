@@ -3,11 +3,11 @@
 ### Functionality:
 - 0 - An option to exit the program
 - 1 - Add new entries
+- 2 - Search by first name
+- 3 - Search by last name
 - 9 - Print contents of dictionary
 
 ### Features to develop:
-- Search by first name 
-- Search by last name 
 - Search by telephone number 
 - Search by city or country 
 - Delete a record for a given telephone number 

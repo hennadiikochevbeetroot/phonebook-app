@@ -3,6 +3,8 @@ Welcome to PhoneBook.
 Options:
 0. An option to exit the program
 1. Add new entries
-9. Print contents of dictionary
+2. Search by first name
+3. Search by last name
+9. Print contents of phonebook
 """
-POSSIBLE_OPTIONS = (0, 1, 9)
+POSSIBLE_OPTIONS = (0, 1, 2, 3, 9)
