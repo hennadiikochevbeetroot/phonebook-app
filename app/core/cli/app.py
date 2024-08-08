@@ -10,12 +10,14 @@ from ..phonebook.print_phonebook import print_phonebook
 from ..phonebook.search_phonebook_by_first_name import search_phonebook_by_first_name
 from ..phonebook.search_phonebook_by_full_name import search_phonebook_by_full_name
 from ..phonebook.search_phonebook_by_last_name import search_phonebook_by_last_name
+from ..phonebook.search_phonebook_by_phone import search_phonebook_by_phone
 
 OPTION_TO_FUNCTION: dict[int, Callable[[Phonebook], None]] = {
     1: create_entry,
     2: search_phonebook_by_first_name,
     3: search_phonebook_by_last_name,
     4: search_phonebook_by_full_name,
+    5: search_phonebook_by_phone,
     9: print_phonebook,
 }
 
