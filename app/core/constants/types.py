@@ -1,1 +1,3 @@
-Phonebook = dict[tuple[str, str], tuple[str, str, str]]
+PhonebookKey = tuple[str, str]
+PhonebookValue = tuple[str, str, str]
+Phonebook = dict[PhonebookKey, PhonebookValue]
