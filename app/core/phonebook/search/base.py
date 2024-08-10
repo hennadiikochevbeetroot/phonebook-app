@@ -1,4 +1,4 @@
-from typing import Callable, Any
+from typing import Callable
 
 from app.core.constants.types import Phonebook, PhonebookKey, PhonebookValue
 
