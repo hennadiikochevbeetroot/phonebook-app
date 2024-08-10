@@ -6,11 +6,11 @@
 - 2 - Search by first name
 - 3 - Search by last name
 - 4 - Search by full name
+- 5 - Search by phone number
+- 6 - Search by location
 - 9 - Print contents of dictionary
 
 ### Features to develop:
-- Search by telephone number 
-- Search by city or country 
 - Delete a record for a given telephone number 
 - Update a record for a given telephone number
 
