@@ -12,6 +12,7 @@ from ..phonebook.search.full_name import search_phonebook_by_full_name
 from ..phonebook.search.last_name import search_phonebook_by_last_name
 from ..phonebook.search.phone import search_phonebook_by_phone
 from ..phonebook.search.location import search_phonebook_by_location
+from ..phonebook.update_name_by_phone import update_name_by_phone
 
 OPTION_TO_FUNCTION: dict[int, Callable[[Phonebook], None]] = {
     1: create_entry,
@@ -20,6 +21,7 @@ OPTION_TO_FUNCTION: dict[int, Callable[[Phonebook], None]] = {
     4: search_phonebook_by_full_name,
     5: search_phonebook_by_phone,
     6: search_phonebook_by_location,
+    7: update_name_by_phone,
     9: print_phonebook,
 }
 

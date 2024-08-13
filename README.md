@@ -8,11 +8,12 @@
 - 4 - Search by full name
 - 5 - Search by phone number
 - 6 - Search by location
+- 7 - Update name by phone number
+- 8 - Delete record by phone number
 - 9 - Print contents of dictionary
 
 ### Features to develop:
-- Delete a record for a given telephone number 
-- Update a record for a given telephone number
+- Delete a record for a given telephone number
 
 ### Key points:
 1. all program logic should be split to different functions;
