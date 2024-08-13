@@ -6,6 +6,7 @@ from .validate import validate_option
 from ..constants.cli import PHONEBOOK_TEST_DATA
 from ..constants.types import Phonebook
 from ..phonebook.create_entry import create_entry
+from ..phonebook.delete_entries_by_phone import delete_entries_by_phone
 from ..phonebook.print_phonebook import print_phonebook
 from ..phonebook.search.first_name import search_phonebook_by_first_name
 from ..phonebook.search.full_name import search_phonebook_by_full_name
@@ -22,6 +23,7 @@ OPTION_TO_FUNCTION: dict[int, Callable[[Phonebook], None]] = {
     5: search_phonebook_by_phone,
     6: search_phonebook_by_location,
     7: update_name_by_phone,
+    8: delete_entries_by_phone,
     9: print_phonebook,
 }
 

@@ -16,5 +16,6 @@ POSSIBLE_OPTIONS = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 PHONEBOOK_TEST_DATA = {
     ('Ann', 'Smith'): ('+1232442', 'Boston', 'US'),
-    ('Jack', 'Smoggs'): ('+12244434', 'London', 'UK')
+    ('Jack', 'Smoggs'): ('+12244434', 'London', 'UK'),
+    ('Julie', 'Roth'): ('+124748444', 'Oslo', 'Norway'),
 }

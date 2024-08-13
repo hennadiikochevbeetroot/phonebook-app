@@ -2,6 +2,7 @@ from ..constants.types import Phonebook
 
 
 def update_name_by_phone(phonebook: Phonebook) -> None:
+    """Updates one record with entered phone"""
     phone_to_update = input('Enter a phone to modify: ').strip()
     first_name_to_update = input('Enter first name: ').strip()
     last_name_to_update = input('Enter last name: ').strip()
