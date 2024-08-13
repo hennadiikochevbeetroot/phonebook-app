@@ -12,9 +12,6 @@
 - 8 - Delete record by phone number
 - 9 - Print contents of dictionary
 
-### Features to develop:
-- Delete a record for a given telephone number
-
 ### Key points:
 1. all program logic should be split to different functions;
 2. store all entries in the dict, where
